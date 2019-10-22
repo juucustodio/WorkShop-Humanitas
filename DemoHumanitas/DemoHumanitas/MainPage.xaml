@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DemoHumanitas.MainPage">
+    <StackLayout HorizontalOptions="FillAndExpand" Margin="30">
+        <Image Source="https://www.blogdovestibular.com/wp-content/uploads/2019/08/Humanitas-1024x410.jpg"
+            />
+        
+        <Entry x:Name="NumeroUm"
+               Placeholder="Numero um"
+               Keyboard="Numeric"/>
+
+        <Entry x:Name="NumeroDois"
+               Placeholder="Numero dois"
+               Keyboard="Numeric"/>
+
+        <Button Text="Calcular" BackgroundColor="Blue" TextColor="White"
+                Clicked="Somar"/>
+
+        <Label x:Name="LabelResultado" TextColor="Black"
+               FontSize="50"
+               />
+        
+    </StackLayout>
+</ContentPage>
